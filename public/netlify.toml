@@ -1,4 +1,4 @@
 [[ redirects ]]
 from = "/*"
-to = "/infex.html"
+to = "/index.html"
 status = 200
