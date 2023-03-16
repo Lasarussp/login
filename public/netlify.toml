@@ -1,0 +1,4 @@
+[[ redirects ]]
+from = "/*"
+to = "/infex.html"
+status = 200
