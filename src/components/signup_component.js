@@ -15,7 +15,7 @@ export default class SignUp extends Component {
     e.preventDefault();
     const { fname, lname, email, password } = this.state;
     console.log(fname, lname, email, password);
-    fetch("https://community-1.netlify.app/register", {
+    fetch("http://localhost:5000/register", {
       method: "POST",
       crossDomain: true,
       headers: {

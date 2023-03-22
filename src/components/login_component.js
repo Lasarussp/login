@@ -13,7 +13,7 @@ export default class Login extends Component {
     e.preventDefault();
     const { email, password } = this.state;
     console.log(email, password);
-    fetch("https://community-1.netlify.app/login-user", {
+    fetch("http://localhost:5000/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -30,8 +30,9 @@ export default class Login extends Component {
       .then((data) => {
         console.log(data, "userRegister");
         if (data.status === "ok" ) {
-          alert("login successful");
+          alert("Login successful");
           window.localStorage.setItem("token", data.data);
+          window.localStorage.setItem("loggedIn", true);
           window.location.href = "./userDetails";
         }
       });
