@@ -15,7 +15,7 @@ function App() {
         <div className="auth-wrapper">
           <div className="auth-inner">
             <Routes>
-              <Route exact path="/" element={isloggedIn == "true" ? <UserDetails /> : <Login />} />
+              <Route exact path="/" element={isloggedIn === "true" ? <UserDetails /> : <Login />} />
               <Route path="/sign-in" element={<Login />} />
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/reset" element={<Reset />} />
