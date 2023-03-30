@@ -72,6 +72,10 @@ export default class Login extends Component {
             <label className="custom-control-label" htmlFor="customCheck1">
               Remember me
             </label>
+            <p className="forgot-password text-right">
+            Remember Ur Password 
+          <a href="/reset">Forgot Password..?</a>
+        </p>
           </div>
         </div>
 
@@ -81,6 +85,7 @@ export default class Login extends Component {
           </button>
         </div>
         <p className="forgot-password text-right">
+          New User pls 
           <a href="/sign-up">Sign Up</a>
         </p>
       </form>

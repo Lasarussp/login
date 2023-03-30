@@ -45,12 +45,12 @@ export default class Reset extends Component {
                 </div>
 
                 <div className="d-grid">
-                    <button type="submit" className="btn btn primary">
-                        Submit
-                    </button>
+                  <button type="submit" className="btn btn-primary">
+                    Submit
+                  </button>
                 </div>
-                <p className="forget-password text-right">
-                    <a href="/sign-up">Sign Up</a>
+                <p className="forgot-password text-right">
+                  <a href="/sign-in">Sign In</a>
                 </p>
             </form>
         );
